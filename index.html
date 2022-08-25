@@ -1,0 +1,768 @@
+<!doctype html>
+<html>
+<head>
+  <!-- Favicon -->
+  <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+  <link rel="manifest" href="/site.webmanifest">
+  <link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5">
+  <meta name="msapplication-TileColor" content="#da532c">
+  <meta name="theme-color" content="#ffffff">
+<!-- End of Favicon -->
+    <title>The Myth of Sanshu</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="https://unpkg.com/swiper@7/swiper-bundle.min.css"/>
+  <link rel="stylesheet" href="css/simplyCountdown.theme.default.css"/>
+  <link href="https://unpkg.com/tailwindcss@^1.0/dist/tailwind.min.css" rel="stylesheet">
+  <link href="tailwind.css" rel="stylesheet">
+
+  <!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-NLQBCTVBDN"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-NLQBCTVBDN');
+</script>
+  
+<style>
+
+/* html {
+  scroll-behavior: smooth;
+} */
+
+.swiper {
+  width: 430px;
+}
+
+.disabled-opacity {
+    opacity: .5;
+    cursor: not-allowed;
+    pointer-events: none;
+}
+
+.grabbable {
+    cursor: move; /* fallback if grab cursor is unsupported */
+    cursor: grab;
+    cursor: -moz-grab;
+    cursor: -webkit-grab;
+}
+
+ /* (Optional) Apply a "closed-hand" cursor during drag operation. */
+.grabbable:active {
+    cursor: grabbing;
+    cursor: -moz-grabbing;
+    cursor: -webkit-grabbing;
+}
+
+  .simply-section > div {
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    .simply-section > div span {
+        width: 100%;
+    }
+
+    .simply-section > div {
+        justify-content: center;
+    }
+
+    .simply-word {
+        color: white;
+        font-size: 14px;
+        margin-top: 8px;
+    }
+
+    .simply-section .simply-amount {
+        border: 4px solid #ee96ec;
+        border-radius: 2px;
+        width: 50px;
+        height: 50px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        color: white;
+        font-size: 24px;
+    }
+
+    .simply-section:last-of-type {
+        margin-right: 0;
+    }
+
+    .simply-section > div {
+        justify-content: center;
+        width: 80px;
+    }
+
+    .countdown-here {
+        display: flex;
+        text-align: center;
+        margin-left: -15px;
+    }
+
+    .simply-word {
+        color: white;
+        font-size: 14px;
+        margin-top: 8px;
+        text-transform: uppercase;
+        font-size: 10px;
+        letter-spacing: 0.7px;
+    }
+
+    .sanshu-pink{
+      background-color: #f2aff1;
+    }
+
+         
+    
+    @media only screen and (max-width: 1024px) {
+        .logo-cloud {
+        display: none !important;
+        }
+
+        .masks {
+            display: none !important;
+        }
+    }
+    
+
+  </style>
+</head>
+<body>
+
+<!-- Hero Section -->
+<!-- This example requires Tailwind CSS v2.0+ -->
+<div class="bg-white">
+  <header sticky top-0 z-50>
+    <div class="relative bg-white">
+      <div class="flex justify-between items-center max-w-7xl mx-auto px-4 py-6 sm:px-6 md:justify-start md:space-x-10 lg:px-8">
+        <div class="flex justify-start lg:w-0 lg:flex-1">
+          <a href="#">
+            <span class="sr-only">Sanshu</span>
+            <img class="h-10 w-auto sm:h-14" src="img/sanshu-logo.svg" alt="">
+          </a>
+        </div>
+        <div class="-mr-2 -my-2 md:hidden">
+            <a target="_blank" href="https://app.uniswap.org/#/swap?outputCurrency=0xc73c167e7a4ba109e4052f70d5466d0c312a344d" class="whitespace-nowrap text-base font-medium text-gray-500 hover:text-gray-900">
+                Buy $SANSHU
+              </a>
+            <a target="_blank" href="https://discord.com/invite/sanshunft" class="ml-2 whitespace-nowrap inline-flex items-center justify-center px-4 py-2 border border-transparent rounded-md shadow-sm text-base font-medium text-white bg-pink-500 hover:bg-pink-600">
+                Join Discord Server
+              </a>
+        </div>
+        
+
+        <div class="hidden md:flex items-center justify-end md:flex-1 lg:w-0">
+          <a target="_blank" href="https://app.uniswap.org/#/swap?outputCurrency=0xc73c167e7a4ba109e4052f70d5466d0c312a344d" class="whitespace-nowrap text-base font-medium text-gray-500 hover:text-gray-900">
+            Buy $SANSHU
+          </a>
+          <a target="_blank" href="https://dogpark.sanshuinufinance.com/" class="ml-6 whitespace-nowrap inline-flex items-center justify-center px-4 py-2 border border-pink-500 rounded-md shadow-sm text-pink-500 font-medium text-white bg-trasparent hover:text-white hover:bg-pink-500">
+            Visit Dog Park
+          </a>
+          <a target="_blank" href="https://discord.com/invite/sanshunft" class="ml-4 whitespace-nowrap inline-flex items-center justify-center px-4 py-2 border border-transparent rounded-md shadow-sm text-base font-medium text-white bg-pink-500 hover:bg-pink-600">
+            Join Discord Server
+          </a>
+        </div>
+      </div>
+
+  <main>
+    <div>
+      <!-- Hero card -->
+      <div class="relative">
+        <div class="absolute inset-x-0 bottom-0 h-1/2 bg-gray-100"></div>
+        <div class="max-w-7xl mx-auto sm:px-6 lg:px-8">
+          <div class="relative shadow-xl sm:rounded-2xl sm:overflow-hidden">
+            <div class="absolute inset-0">
+              <img class="h-full w-full object-cover" src="img/sanshu-hero.png" alt="People working on laptops">
+              <div class="absolute inset-0 bg-gray-700 mix-blend-multiply"></div>
+            </div>
+            <div class="relative px-4 py-16 sm:px-6 sm:py-24 lg:py-32 lg:px-8">
+              <h1 class="text-center text-4xl font-extrabold tracking-tight sm:text-5xl lg:text-6xl">
+                <span class="block text-white">From Meme</span>
+                <span class="block text-pink-200">to Hero</span>
+              </h1>
+              <p class="mt-6 max-w-lg mx-auto text-center text-xl text-pink-200 sm:max-w-3xl">
+                Created by SANSHU STUDIOS, a decentralized design studio birthed from the blockchain consisting of artists and designers from around the globe. 
+              </p>
+              <div class="mt-10 max-w-sm mx-auto sm:max-w-none sm:flex sm:justify-center">
+                <div class="space-y-4 sm:space-y-0 sm:mx-auto sm:inline-grid sm:grid-cols-2 sm:gap-5">
+                  <a target="_blank" href="https://www.youtube.com/watch?v=qE2dFzzCp-4" class="flex items-center justify-center px-4 py-3 border border-transparent text-base font-medium rounded-md shadow-sm text-pink-700 bg-white hover:bg-pink-50 sm:px-8">
+                    <span style="margin-right: 8px;"><svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                      <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14.752 11.168l-3.197-2.132A1 1 0 0010 9.87v4.263a1 1 0 001.555.832l3.197-2.132a1 1 0 000-1.664z" />
+                      <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
+                    </svg></span>Watch Namahage Trailer
+                  </a>
+                  <a href="#section1" class="scrolling flex items-center justify-center px-4 py-3 border border-transparent text-base font-medium rounded-md shadow-sm text-white bg-pink-500 bg-opacity-60 hover:bg-opacity-70 sm:px-8">
+                    Upcoming Woofdate 4
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Logo cloud -->
+      <div class="bg-gray-100 logo-cloud">
+        <div class="max-w-7xl mx-auto py-16 px-4 sm:px-6 lg:px-8">
+          <p class="text-center text-sm font-semibold uppercase text-gray-500 tracking-wide">
+            Sanshu is available on the following exchanges
+          </p>
+          <div class="mt-6 grid grid-cols-2 gap-8 md:grid-cols-6 lg:grid-cols-5">
+            <div class="col-span-1 flex justify-center md:col-span-2 lg:col-span-1">
+                <img class="h-12" src="img/exchanges/uniswap-grey-adj.png" alt="Tuple">
+              </div>
+            
+              <div class="col-span-2 flex justify-center md:col-span-2 md:col-start-4 lg:col-span-1">
+                <img class="h-12" src="img/exchanges/lbank-grey-adjust.png" alt="Workcation">
+              </div>
+              <div class="col-span-1 flex justify-center md:col-span-2 lg:col-span-1">
+                <img class="h-12" src="img/exchanges/guardarian-assets/guardarian-grey-adj.png" alt="Mirage">
+              </div>
+              <div class="col-span-1 flex justify-center md:col-span-2 lg:col-span-1">
+                <img class="h-12" src="img/exchanges/change-now-grey.png" alt="StaticKit">
+              </div>
+            <div class="col-span-1 flex justify-center md:col-span-2 md:col-start-2 lg:col-span-1">
+              <img class="h-12" src="img/exchanges/bkex-grey-adj.png" alt="Transistor">
+            </div>
+            
+          </div>
+        </div>
+      </div>
+    </div>
+
+<!-- This example requires Tailwind CSS v2.0+ -->
+<div class="py-16 bg-gray-50 overflow-hidden lg:py-24">
+    <div class="relative max-w-xl mx-auto px-4 sm:px-6 lg:px-8 lg:max-w-7xl">
+      <svg class="hidden lg:block absolute left-full transform -translate-x-1/2 -translate-y-1/4" width="404" height="784" fill="none" viewBox="0 0 404 784" aria-hidden="true">
+        <defs>
+          <pattern id="b1e6e422-73f8-40a6-b5d9-c8586e37e0e7" x="0" y="0" width="20" height="20" patternUnits="userSpaceOnUse">
+            <rect x="0" y="0" width="4" height="4" class="text-gray-200" fill="currentColor" />
+          </pattern>
+        </defs>
+        <rect width="404" height="784" fill="url(#b1e6e422-73f8-40a6-b5d9-c8586e37e0e7)" />
+      </svg>
+  
+      <div class="relative">
+        <h2 class="text-center text-3xl leading-8 font-extrabold tracking-tight text-gray-900 sm:text-4xl">
+            "Victory is a thousand times sweeter when you're the underdog."
+        </h2>
+        <p class="mt-4 max-w-3xl mx-auto text-center text-xl text-gray-500">
+            What originally started as just a 'meme token' has slowly evolved into an innovative idea yet seen in this space. Through the struggles came progress as SANSHU aims at becoming a global brand, bringing joy to people of all ages!
+        </p>
+      </div>
+  
+      <div class="relative mt-12 lg:mt-24 lg:grid lg:grid-cols-2 lg:gap-8 lg:items-center">
+        <div class="relative">
+          <h3 class="text-2xl font-extrabold text-gray-900 tracking-tight sm:text-3xl">
+            So, what is Sanshu?
+          </h3>
+          <p class="mt-3 text-lg text-gray-500">
+            The spirit of Sanshu flows within all of us, ensuring to those around the world that crypto can be cute, fun, and entertaining. Sanshu accomplishes this through the Metaverse, Gaming, NFTs, DeFi, & Powerful Storytelling.</p>
+  
+          <dl class="mt-10 space-y-10">
+            <div class="relative">
+              <dt>
+                <div class="absolute flex items-center justify-center h-12 w-12 rounded-md bg-pink-500 text-white">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 6.253v13m0-13C10.832 5.477 9.246 5 7.5 5S4.168 5.477 3 6.253v13C4.168 18.477 5.754 18 7.5 18s3.332.477 4.5 1.253m0-13C13.168 5.477 14.754 5 16.5 5c1.747 0 3.332.477 4.5 1.253v13C19.832 18.477 18.247 18 16.5 18c-1.746 0-3.332.477-4.5 1.253" />
+                      </svg>
+                </div>
+                <p class="ml-16 text-lg leading-6 font-medium text-gray-900">The Myth Of SANSHU</p>
+              </dt>
+              <dd class="mt-2 ml-16 text-base text-gray-500">
+                Once the 'Ethereum Crystal' passed down for generations originally by the legendary 'Wooftoshi Nakamoto' was bestowed upon Sanshu. She inherited the 'will of decentralization', which she used to bring balance to the world. Join Sanshu and her friends as they em-bark upon a new adventure!
+              </dd>
+            </div>
+  
+            <div class="relative">
+              <dt>
+                <div class="absolute flex items-center justify-center h-12 w-12 rounded-md bg-pink-500 text-white">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14.828 14.828a4 4 0 01-5.656 0M9 10h.01M15 10h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
+                      </svg>
+                </div>
+                <p class="ml-16 text-lg leading-6 font-medium text-gray-900">Gaming + Metaverse</p>
+              </dt>
+              <dd class="mt-2 ml-16 text-base text-gray-500">
+                Building on the lore of Sanshu, we wish to further immerse our audience with the use of Gaming, P2E, VR and AR. Later in our roadmap, we'll include a Layer 2 solution that would allow for burns of our community token, as well as let us make near 'gas-less' transactions, opening up a gamut of new possibilities.
+              </dd>
+            </div>
+  
+            <div class="relative">
+              <dt>
+                <div class="absolute flex items-center justify-center h-12 w-12 rounded-md bg-pink-500 text-white">
+                    <svg style="position: relative; top: 2px;" width="24" height="45" viewBox="0 0 31 45" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <g filter="url(#filter0_d_631_2774)">
+                        <g opacity="0.6">
+                        <path opacity="0.6" d="M15.3585 13.6802L4 18.846L15.3585 25.5566L26.7126 18.846L15.3585 13.6802Z" fill="#010101"/>
+                        </g>
+                        <g opacity="0.45">
+                        <path opacity="0.45" d="M4 18.846L15.3585 25.5567V0L4 18.846Z" fill="white"/>
+                        </g>
+                        <g opacity="0.8">
+                        <path opacity="0.8" d="M15.3584 0V25.5567L26.7124 18.846L15.3584 0Z" fill="white"/>
+                        </g>
+                        <g opacity="0.45">
+                        <path opacity="0.45" d="M4 20.998L15.3585 37V27.7087L4 20.998Z" fill="white"/>
+                        </g>
+                        <g opacity="0.8">
+                        <path opacity="0.8" d="M15.3584 27.7087V37L26.7214 20.998L15.3584 27.7087Z" fill="white"/>
+                        </g>
+                        </g>
+                        <defs>
+                        <filter id="filter0_d_631_2774" x="0" y="0" width="30.7214" height="45" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+                        <feFlood flood-opacity="0" result="BackgroundImageFix"/>
+                        <feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" result="hardAlpha"/>
+                        <feOffset dy="4"/>
+                        <feGaussianBlur stdDeviation="2"/>
+                        <feComposite in2="hardAlpha" operator="out"/>
+                        <feColorMatrix type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.25 0"/>
+                        <feBlend mode="normal" in2="BackgroundImageFix" result="effect1_dropShadow_631_2774"/>
+                        <feBlend mode="normal" in="SourceGraphic" in2="effect1_dropShadow_631_2774" result="shape"/>
+                        </filter>
+                        </defs>
+                        </svg>
+                                          
+                </div>
+                <p class="ml-16 text-lg leading-6 font-medium text-gray-900">Dog Park Version 1.0</p>
+              </dt>
+              <dd class="mt-2 ml-16 text-base text-gray-500">
+                Our decentralized application (dApp) <a style="text-decoration: underline;" target="_blank" href="https://dogpark.sanshuinufinance.com/">Dog Park</a> is a yield farming platform that allows users to farm and stake their tokens. Ninjas will be given the option to earn 'passive income' simply by connecting their wallets. Users who add to our liquidity will be rewarded with our governance token Kibble. Kibble can either be sold for profit or used in our community DAO, which will help shape the future of this organization.
+              </dd>
+            </div>
+          </dl>
+        </div>
+  
+        <div class="mt-10 -mx-4 relative lg:mt-0" aria-hidden="true">
+          <svg class="absolute left-1/2 transform -translate-x-1/2 translate-y-16 lg:hidden" width="784" height="404" fill="none" viewBox="0 0 784 404">
+            <defs>
+              <pattern id="ca9667ae-9f92-4be7-abcb-9e3d727f2941" x="0" y="0" width="20" height="20" patternUnits="userSpaceOnUse">
+                <rect x="0" y="0" width="4" height="4" class="text-gray-200" fill="currentColor" />
+              </pattern>
+            </defs>
+            <rect width="784" height="404" fill="url(#ca9667ae-9f92-4be7-abcb-9e3d727f2941)" />
+          </svg>
+
+
+<!-- Slider main container -->
+<div class="swiper grabbable">
+    <!-- Additional required wrapper -->
+    <div class="swiper-wrapper">
+      <!-- Slides -->
+      <div class="swiper-slide"><img class="relative mx-auto" style="border-radius: 4px;" width="490" src="img/myth-of-sanshu.jpg" alt="Myth of Sanshu"></div>
+      <div class="swiper-slide"><img class="relative mx-auto" width="490" src="img/concepts/sanshu-layer-2.jpg" alt="Sanshu City"></div>
+      <div class="swiper-slide"><img class="relative mx-auto" width="490" src="img/concepts/sanshu-layer-2-plush.png" alt="Sanshu Layer 2"></div>
+      <div class="swiper-slide"><img class="relative mx-auto" width="490" src="img/concepts/sanshu-layer-2-book.jpg" alt="Sanshu Layer 2 Bookshop"></div>
+      <div class="swiper-slide"><img class="relative mx-auto" width="490" src="img/concepts/sanshu-layer-2-portal.jpg" alt="Sanshu Layer 2 Portal"></div>
+      <div class="swiper-slide"><img class="relative mx-auto" width="490" src="img/concepts/sanshu-layer-2-castle.jpg" alt="Sanshu Layer 2 Castle"></div>
+      <div class="swiper-slide"><img class="relative mx-auto" width="490" src="img/concepts/sanshu-layer-2-village-2.jpg" alt="Sanshu Layer 2 Village"></div>
+      ...
+    </div>
+    <!-- If we need pagination -->
+    <div class="swiper-pagination"></div>
+
+  </div>
+  
+
+
+
+        </div>
+      </div>
+  
+      <svg class="hidden lg:block absolute right-full transform translate-x-1/2 translate-y-12" width="404" height="784" fill="none" viewBox="0 0 404 784" aria-hidden="true">
+        <defs>
+          <pattern id="64e643ad-2176-4f86-b3d7-f2c5da3b6a6d" x="0" y="0" width="20" height="20" patternUnits="userSpaceOnUse">
+            <rect x="0" y="0" width="4" height="4" class="text-gray-200" fill="currentColor" />
+          </pattern>
+        </defs>
+        <rect width="404" height="784" fill="url(#64e643ad-2176-4f86-b3d7-f2c5da3b6a6d)" />
+      </svg>
+  
+      <div class="relative mt-12 sm:mt-16 lg:mt-24">
+        <div class="lg:grid lg:grid-flow-row-dense lg:grid-cols-2 lg:gap-8 lg:items-center">
+          <div class="lg:col-start-2">
+            <h3 class="text-2xl font-extrabold text-gray-900 tracking-tight sm:text-3xl">
+              Sanshu Community Token
+            </h3>
+            <!-- <p class="mt-3 text-lg text-gray-500">
+              What write here
+            </p> -->
+  
+            <dl class="mt-10 space-y-10">
+              <div class="relative">
+                <dt>
+                  <div class="absolute flex items-center justify-center h-12 w-12 rounded-md bg-pink-500 text-white">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 15v2m-6 4h12a2 2 0 002-2v-6a2 2 0 00-2-2H6a2 2 0 00-2 2v6a2 2 0 002 2zm10-10V7a4 4 0 00-8 0v4h8z" />
+                      </svg>
+                  </div>
+                  <p class="ml-16 text-lg leading-6 font-medium text-gray-900">Renounced Contract</p>
+                </dt>
+                <dd class="mt-2 ml-16 text-base text-gray-500">
+                    We see both trust and transparency as critically important, reflected in our choice to entirely renounce our community contract. It is impossible to rug pull or make any changes, thus making it genuinely owned by the community.
+                </dd>
+              </div>
+  
+              <div class="relative">
+                <dt>
+                  <div class="absolute flex items-center justify-center h-12 w-12 rounded-md bg-pink-500 text-white">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17.657 18.657A8 8 0 016.343 7.343S7 9 9 10c0-2 .5-5 2.986-7C14 5 16.09 5.777 17.656 7.343A7.975 7.975 0 0120 13a7.975 7.975 0 01-2.343 5.657z" />
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9.879 16.121A3 3 0 1012.015 11L11 14H9c0 .768.293 1.536.879 2.121z" />
+                      </svg>
+                  </div>
+                  <p class="ml-16 text-lg leading-6 font-medium text-gray-900">Deflationary Tokenomics</p>
+                </dt>
+                <dd class="mt-2 ml-16 text-base text-gray-500">One of our most prized assets is our deflationary mechanics, which auto-compound 24/7. With our 1% burn and 1% reward, you'll earn passive income on your Sanshu simply by holding.
+                </dd>
+              </div>
+            </dl>
+          </div>
+  
+          <div class="mt-10 -mx-4 relative lg:mt-0 lg:col-start-1">
+            <svg class="absolute left-1/2 transform -translate-x-1/2 translate-y-16 lg:hidden" width="784" height="404" fill="none" viewBox="0 0 784 404" aria-hidden="true">
+              <defs>
+                <pattern id="e80155a9-dfde-425a-b5ea-1f6fadd20131" x="0" y="0" width="20" height="20" patternUnits="userSpaceOnUse">
+                  <rect x="0" y="0" width="4" height="4" class="text-gray-200" fill="currentColor" />
+                </pattern>
+              </defs>
+              <rect width="784" height="404" fill="url(#e80155a9-dfde-425a-b5ea-1f6fadd20131)" />
+            </svg>
+            <img class="relative mx-auto" width="490" src="img/sanshu-coin-bright.png" alt="">
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+  <!-- Audit -->
+
+  <!-- This example requires Tailwind CSS v2.0+ -->
+  <div class="bg-gray-50">
+    <div class="max-w-7xl mx-auto py-12 px-4 sm:px-6 lg:py-16 lg:px-8 lg:flex lg:items-center lg:justify-between">
+      <h2 class="text-3xl font-extrabold tracking-tight text-gray-900 sm:text-4xl">
+        <span class="block">Our Smart Contract has been fully audited by</span>
+        <span class="block text-pink-600"><a target="_blank" href="https://solidity.finance/">Solidity Finance</a></span>
+      </h2>
+      <div class="mt-8 flex lg:mt-0 lg:flex-shrink-0">
+        <div class="inline-flex rounded-md shadow">
+          <a target="_blank" href="https://solidity.finance/audits/SanshuInu/" class="inline-flex items-center justify-center px-5 py-3 border border-transparent text-base font-medium rounded-md text-white bg-pink-600 hover:bg-pink-700">
+            See Audit Results
+          </a>
+        </div>
+      </div>
+    </div>
+  </div>
+  
+<!-- End of Audit -->
+
+
+  <!-- Stats -->
+
+  <!-- This example requires Tailwind CSS v2.0+ -->
+<div class="bg-gray-50 pt-12 sm:pt-16">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="max-w-4xl mx-auto text-center">
+        <h2 class="text-3xl font-extrabold text-gray-900 sm:text-4xl">
+            We're not your average dog token.
+        </h2>
+ 
+      </div>
+    </div>
+    <div class="mt-10 pb-12 bg-white sm:pb-16">
+      <div class="relative">
+        <div class="absolute inset-0 h-1/2 bg-gray-50"></div>
+        <div class="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div class="max-w-4xl mx-auto">
+            <dl class="rounded-lg bg-white shadow-lg sm:grid sm:grid-cols-3">
+              <div class="flex flex-col border-b border-gray-100 p-6 text-center sm:border-0 sm:border-r">
+                <dt class="order-2 mt-2 text-lg leading-6 font-medium text-gray-500" style="
+                    text-transform: uppercase;
+                    font-size: 12px;
+                    line-height: 1.2;
+                    margin-top: 13px;
+                ">We've burnt 58% at launch </br>with <span class="text-pink-500">141,000+</span> transfers so far</dt>
+                <dd class="order-1 text-4xl font-extrabold text-pink-500">
+                    62.9%
+                </dd>
+              </div>
+              <div class="flex flex-col border-t border-b border-gray-100 p-6 text-center sm:border-0 sm:border-l sm:border-r">
+                <dt style="text-transform: uppercase;
+                font-size: 12px;
+                line-height: 1.2;
+                margin-top: 13px;" class="order-2 mt-2 text-lg leading-6 font-medium text-gray-500">
+                  Ninjas</br>
+                  (Holders)
+                </dt>
+                <dd class="order-1 text-4xl font-extrabold text-pink-500">
+                    44,855
+                </dd>
+              </div>
+              <div class="flex flex-col border-t border-gray-100 p-6 text-center sm:border-0 sm:border-l">
+                <dt class="order-2 mt-2 text-lg leading-6 font-medium text-gray-500" style="
+                    text-transform: uppercase;
+                    font-size: 12px;
+                    line-height: 1.2;
+                    margin-top: 13px;
+                ">Our market cap is currently </br> <span class="text-pink-500">2733x</span> smaller than SHIB</dt>
+                <dd class="order-1 text-4xl font-extrabold text-pink-500">
+                  $12.3M
+                </dd>
+              </div>
+            </dl>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  
+
+  <!-- End of Stats -->
+
+  <!-- FAQs -->
+
+  <!-- This example requires Tailwind CSS v2.0+ -->
+  <div class="bg-white">
+    <div class="max-w-7xl mx-auto py-12 px-4 sm:py-16 sm:px-6 lg:px-8">
+      <div class="max-w-3xl mx-auto divide-y-2 divide-gray-200">
+        <h2 class="text-center text-3xl font-extrabold text-gray-900 sm:text-4xl">
+          Frequently asked questions
+        </h2>
+        <dl x-data="{selected:null}" class="mt-6 space-y-6 divide-y divide-gray-200">
+          <div class="pt-6">
+            <dt class="text-lg">
+              <!-- Expand/collapse question button -->
+              <button type="button" @click="selected !== 0 ? selected = 0 : selected = null" class="text-left w-full flex justify-between items-start text-gray-400" aria-controls="faq-0" aria-expanded="false">
+                <span class="font-medium text-gray-900">
+                    What are the goals for the project? 
+                </span>
+                <span class="ml-6 h-7 flex items-center">
+                  <!--
+                    Expand/collapse icon, toggle classes based on question open state.
+  
+                    Heroicon name: outline/chevron-down
+  
+                    Open: "-rotate-180", Closed: "rotate-0"
+                  -->
+                  <svg class="rotate-0 h-6 w-6 transform" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" aria-hidden="true">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" />
+                  </svg>
+                </span>
+              </button>
+            </dt>
+            <dd class="mt-2 pr-12" id="faq-0" x-show="selected == 0">
+              <p class="text-base text-gray-500">
+                Our goal as a studio is for people of all ages to feel the spirit of SANSHU. We wish to bring Sanshu to life as we firmly believe by culturally representing her home of Japan, we'll have the opportunity to attract well-established markets and studios in that region.
+              </p>
+              <p class="text-base text-gray-500">
+                We intend to expand the team and recruit members that will be there to walk us through the proper steps necessary to make this vision a reality. We can make this possible through our Manga, Metaverse, DeFi, and Awesome Community. We can make this possible!
+              </p>
+            </dd>
+          </div>
+
+          <div class="pt-6">
+            <dt class="text-lg">
+              <!-- Expand/collapse question button -->
+              <button type="button" @click="selected !== 1 ? selected = 1 : selected = null" class="text-left w-full flex justify-between items-start text-gray-400" aria-controls="faq-0" aria-expanded="false">
+                <span class="font-medium text-gray-900">
+                    How does SANSHU reward system work? 
+                </span>
+                <span class="ml-6 h-7 flex items-center">
+                  <!--
+                    Expand/collapse icon, toggle classes based on question open state.
+  
+                    Heroicon name: outline/chevron-down
+  
+                    Open: "-rotate-180", Closed: "rotate-0"
+                  -->
+                  <svg class="rotate-0 h-6 w-6 transform" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" aria-hidden="true">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" />
+                  </svg>
+                </span>
+              </button>
+            </dt>
+            <dd class="mt-2 pr-12" id="faq-1" x-show="selected == 1">
+              <p class="text-base text-gray-500">
+                The beauty of the 'SANSHU Community Token' lies within the tokenomics. SANSHU was one of the very first dog tokens with deflationary mechanics and burn rewards.
+              </p>
+              <p class="text-base text-gray-500">
+                With 1% burn and 1% reward with each transaction, holders can easily earn interest by simply leaving their SANSHU in their wallets. Our yield farming platform 'Dog Park' allows users to farm and stake their tokens and gain an even higher interest. SANSHU makes passive income easy and fun for the investor.
+              </p>
+            </dd>
+          </div>
+
+
+          <div class="pt-6">
+            <dt class="text-lg">
+              <!-- Expand/collapse question button -->
+              <button type="button" @click="selected !== 2 ? selected = 2 : selected = null" class="text-left w-full flex justify-between items-start text-gray-400" aria-controls="faq-0" aria-expanded="false">
+                <span class="font-medium text-gray-900">
+                    Your contract is renounced, what are your solutions to burn manually? 
+                </span>
+                <span class="ml-6 h-7 flex items-center">
+                  <!--
+                    Expand/collapse icon, toggle classes based on question open state.
+  
+                    Heroicon name: outline/chevron-down
+  
+                    Open: "-rotate-180", Closed: "rotate-0"
+                  -->
+                  <svg class="rotate-0 h-6 w-6 transform" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" aria-hidden="true">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" />
+                  </svg>
+                </span>
+              </button>
+            </dt>
+            <dd class="mt-2 pr-12" id="faq-2" x-show="selected == 2">
+              <p class="text-base text-gray-500">
+                Later down the line we intend to create a Layer 2 solution that will allow for us to far exceed our current limitations.
+              </p>
+            </dd>
+          </div>
+
+          <div class="pt-6">
+            <dt class="text-lg">
+              <!-- Expand/collapse question button -->
+              <button type="button" @click="selected !== 3 ? selected = 3 : selected = null" class="text-left w-full flex justify-between items-start text-gray-400" aria-controls="faq-0" aria-expanded="false">
+                <span class="font-medium text-gray-900">
+                  What happened to MFUND? 
+                </span>
+                <span class="ml-6 h-7 flex items-center">
+                  <!--
+                    Expand/collapse icon, toggle classes based on question open state.
+  
+                    Heroicon name: outline/chevron-down
+  
+                    Open: "-rotate-180", Closed: "rotate-0"
+                  -->
+                  <svg class="rotate-0 h-6 w-6 transform" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" aria-hidden="true">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" />
+                  </svg>
+                </span>
+              </button>
+            </dt>
+            <dd class="mt-2 pr-12" id="faq-3" x-show="selected == 3">
+              <p class="text-base text-gray-500">
+                Unfortunately, the Original Developer 'Sanshu Bro' decided it was best to discontinue MFUND due to lack of resources. We've compensated all MFUND liquidity providers as a means to show our sincerity to the Community for the inconvenience. 
+              </p>
+            </dd>
+          </div>
+  
+          <!-- More questions... -->
+        </dl>
+      </div>
+    </div>
+  </div>
+  
+
+  <!-- End of FAQs -->
+
+
+  <!-- Yokai NFT CTA -->
+
+  <!--
+  This example requires Tailwind CSS v2.0+ 
+  
+  This example requires some changes to your config:
+  
+  ```
+  // tailwind.config.js
+  module.exports = {
+    // ...
+    plugins: [
+      // ...
+      require('@tailwindcss/aspect-ratio'),
+    ],
+  }
+  ```
+-->
+<div id="section1" class="bg-gray-50">
+    <div class="max-w-7xl mx-auto py-16 px-4 sm:px-6 lg:px-8">
+      <div class="sanshu-pink rounded-lg shadow-xl overflow-hidden lg:grid lg:grid-cols-2 lg:gap-4">
+        <div class="pt-10 pb-12 px-6 sm:pt-16 sm:px-16 lg:py-16 lg:pr-0 xl:py-20 xl:px-20">
+          <div class="lg:self-center">
+            <h2 class="text-3xl font-extrabold text-white sm:text-4xl">
+              <span class="block">Final of the Year</span>
+              <span class="block text-pink-100">WOOFDATE 4</span>
+            </h2>
+            <p class="mt-6 text-lg leading-6" style="color: #fff; line-height: 1.5">Seasons greetings from the SANSHU team! Finishing off the year strongly we have our final Woofdate of the year. Not only our biggest annd most exciting one yet, but we have much to reveal about the current state of SANSHU, and what we have coming up next. You don't want to miss this...</p>
+            <div class="countdown-here mt-6"></div>
+            <a href="https://www.youtube.com/watch?v=rs166P6O3I4" target="_blank" style="margin-bottom: 36px;" class="mt-8 bg-white border border-transparent rounded-md shadow px-5 py-3 inline-flex items-center text-base font-medium text-pink-400 hover:bg-pink-50"> Watch Trailer<span style="padding-left: 8px;"><svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" viewBox="0 0 20 20" fill="currentColor">
+                <path fill-rule="evenodd" d="M10.293 3.293a1 1 0 011.414 0l6 6a1 1 0 010 1.414l-6 6a1 1 0 01-1.414-1.414L14.586 11H3a1 1 0 110-2h11.586l-4.293-4.293a1 1 0 010-1.414z" clip-rule="evenodd" />
+              </svg></span></a></br><span style="font-size: 12px; color: white; position: relative; top: -24px; opacity: 0.6;">Full Video out December 25th 2021 at 0.00am (UTC)</span>  
+        </div>
+        </div>
+        <div class="mt-6 aspect-w-5 aspect-h-3 md:aspect-w-2 md:aspect-h-1">
+          <img class="transform translate-x-6 translate-y-6 rounded-md object-cover object-left-top sm:translate-x-16 lg:translate-y-20 masks" src="img/sanshu-christ-right.png" alt="App screenshot">
+        </div>
+      </div>
+    </div>
+  </div>
+  
+
+  <!-- End of Yokai NFT CTA -->
+
+
+    <!-- More main page content here... -->
+  </main>
+</div>
+
+    <!-- Footer -->
+
+  <!-- This example requires Tailwind CSS v2.0+ -->
+<footer class="bg-white">
+    <div class="max-w-7xl mx-auto py-12 px-4 overflow-hidden sm:px-6 lg:px-8">
+
+      <div class="mt-8 flex justify-center space-x-6">
+        <a target="_blank" href="https://www.reddit.com/r/SanshuInuToken/" class="text-gray-400 hover:text-gray-500">
+            <span class="sr-only">Reddit</span>
+            <img style="max-width: 30px;" src="img/icons-footer/reddit.svg" alt="Reddit">
+          </a>
+
+        <a target="_blank" href="https://www.youtube.com/channel/UCLNKeeItk0H2xomC8Havjcw/featured" class="text-gray-400 hover:text-gray-500">
+          <span class="sr-only">YouTube</span>
+          <img style="max-width: 30px;" src="img/icons-footer/youtube.svg" alt="Youtube">
+        </a>
+
+        <a href="https://twitter.com/SanshuToken" class="text-gray-400 hover:text-gray-500">
+            <span class="sr-only">Twitter</span>
+            <img style="max-width: 30px;" src="img/icons-footer/twitter.svg" alt="Twitter">
+          </a>
+
+          <a target="_blank" href="https://discord.com/invite/sanshunft" class="text-gray-400 hover:text-gray-500">
+            <span class="sr-only">Discord</span>
+            <img style="max-width: 30px;" src="img/icons-footer/discord.svg" alt="Discord">
+          </a>
+
+          <a target="_blank" href="https://www.instagram.com/sanshuinufinance/" class="text-gray-400 hover:text-gray-500">
+            <span class="sr-only">Instagram</span>
+            <img style="max-width: 30px;" src="img/icons-footer/instagram.svg" alt="Instagram">
+          </a>
+
+        <a target="_blank" href="https://t.me/SanshuInu" class="text-gray-400 hover:text-gray-500">
+            <span class="sr-only">Telegram</span>
+            <img style="max-width: 30px;" src="img/icons-footer/telegram.svg" alt="Telegram">
+          </a>
+  
+
+    </div>
+    <p style="margin-top: 16px;" class="mt-8 text-center text-base text-gray-400">
+        "Victory is a thousand times sweeter when you're the underdog."</br>
+        - SANSHU
+        </p>
+  </footer>
+  
+
+  <!-- End of Footer -->
+  <script src="https://cdn.jsdelivr.net/gh/alpinejs/alpine@v1.8.0/dist/alpine.js" defer></script>
+  <script src="dist/simplyCountdown.min.js"></script>
+  <script src="https://unpkg.com/swiper@7/swiper-bundle.min.js"></script>
+  <script src="main.js"></script>
+</body>
+</html>
